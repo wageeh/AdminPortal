@@ -101,6 +101,7 @@ export class DashboardComponent implements OnInit {
   }
 
   public selectOnChange(target:any){
+    this.FliteredStatus = target.value;
     this.initNewCall();
   }
 
