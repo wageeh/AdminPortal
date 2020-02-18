@@ -18,7 +18,7 @@ export class VehiclestatusService {
   // SAS URL for using blob table
   // private strurl = 'https://blobvehiclestatus.table.core.windows.net/BlobVechileStatus?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2021-02-05T19:49:40Z&st=2020-02-01T11:49:40Z&spr=https,http&sig=6mWPeJbJ4xliVP%2B5y8M5q%2FI6yXhiR6v8OZrgAc0Ai1U%3D'
   // better scenario is to call a url which i can control access to and don't expose the table data to the internet
-  private  statusurl:string = 'https://prod-30.northeurope.logic.azure.com:443/workflows/9f3dbd47b2a342208fd0e26bb7c0ddce/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=abf4_PwkVG34Cddi3UkgZWllzrlFDQEkG1ieMfnfz9M'
+  private  statusurl:string = 'https://prod-00.northeurope.logic.azure.com:443/workflows/ddcca370a30a45dcbcea393cec39145c/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=FPHHgKuc7gKumTLGlZl0F9UPpGUIxXdvcAVedZ-0_P8'
   constructor(private coreService:CoreService) { }
 
   public async ListVehicleStatus()
